@@ -1,0 +1,100 @@
+/* ==================================================
+   GLOBAL BUTTON STYLES STARTED
+================================================== */
+
+/* Base Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 26px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-fast);
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-text-light);
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  border-color: var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+/* Light Outline Button */
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.85);
+  background-color: transparent;
+  color: var(--color-text-light);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+
+/* Button Sizes */
+.btn-sm {
+  min-height: 42px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  min-height: 54px;
+  padding: 15px 32px;
+  font-size: 0.95rem;
+}
+
+/* Full Width Button */
+.btn-block {
+  width: 100%;
+}
+
+/* Disabled Button */
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Button Icon */
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ==================================================
+   GLOBAL BUTTON STYLES ENDED
+================================================== */

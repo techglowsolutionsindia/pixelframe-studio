@@ -1,0 +1,37 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 80 80">
+  <title>PixelFrame Studio Favicon</title>
+
+  <!-- Camera Body -->
+  <rect x="10" y="25"
+        width="60" height="47"
+        rx="10"
+        fill="none"
+        stroke="#25221F"
+        stroke-width="4"/>
+
+  <!-- Camera Top -->
+  <path d="M22 25 L28 15 H48 L54 25"
+        fill="none"
+        stroke="#25221F"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- Camera Lens -->
+  <circle cx="40" cy="48"
+          r="15"
+          fill="none"
+          stroke="#B38B59"
+          stroke-width="4"/>
+
+  <!-- Lens Center -->
+  <circle cx="40" cy="48"
+          r="5"
+          fill="#25221F"/>
+
+  <!-- Camera Indicator -->
+  <circle cx="60" cy="34"
+          r="2.5"
+          fill="#B38B59"/>
+</svg>

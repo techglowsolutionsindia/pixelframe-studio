@@ -1,0 +1,286 @@
+/* ==================================================
+   GLOBAL RESPONSIVE STYLES STARTED
+================================================== */
+
+/* Global Responsive Safeguards */
+@media (max-width: 1199px) {
+  :root {
+    --section-padding: 80px;
+  }
+
+  .header-nav-list {
+    gap: 12px;
+  }
+
+  .header-nav-link {
+    font-size: 0.75rem;
+  }
+
+  .header-logo img {
+    height: 42px;
+  }
+
+  .header-cta {
+    padding-inline: 16px;
+    font-size: 0.8rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .footer-column:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Tablet And Smaller Laptop Layout */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 76px;
+    --section-padding: 72px;
+  }
+
+  /* Header Mobile Navigation */
+  .header-container {
+    gap: var(--space-sm);
+  }
+
+  .header-logo img {
+    height: 44px;
+  }
+
+  .header-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    bottom: 0;
+    z-index: calc(var(--z-header) + 2);
+    display: block;
+    width: min(360px, 100%);
+    padding: var(--space-lg) var(--space-md);
+    overflow-y: auto;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    visibility: hidden;
+    transform: translateX(100%);
+    transition:
+      transform var(--transition-normal),
+      visibility var(--transition-normal);
+  }
+
+  .header-nav.is-open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .header-nav-link {
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .header-nav-link::after {
+    display: none;
+  }
+
+  .header-nav-backdrop {
+    position: fixed;
+    inset: var(--header-height) 0 0;
+    z-index: calc(var(--z-header) - 1);
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  .header-nav-backdrop.is-visible {
+    display: block;
+  }
+
+  /* Shared Layouts */
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-grid {
+    gap: var(--space-lg);
+  }
+
+  /* Footer */
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-column:last-child {
+    grid-column: auto;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 70px;
+    --section-padding: 64px;
+  }
+
+  /* Container */
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  /* Typography And Sections */
+  .section-heading {
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+  }
+
+  .section-full {
+    min-height: auto;
+  }
+
+  /* Shared Grids */
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Header */
+  .header-logo img {
+    height: 40px;
+    max-width: 180px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  /* Buttons */
+  .btn {
+    min-height: 48px;
+  }
+
+  /* Forms */
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .form-group-full {
+    grid-column: auto;
+  }
+
+  /* Cards */
+  .card-content {
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    padding: var(--space-md);
+  }
+
+  /* Footer */
+  .footer-main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-lg);
+    padding-block: 56px;
+  }
+
+  .footer-bottom-inner {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: var(--space-sm);
+    padding-block: var(--space-md);
+    text-align: center;
+  }
+
+  .footer-back-to-top {
+    justify-self: center;
+  }
+
+  .footer-legal {
+    gap: 12px;
+  }
+}
+
+/* Small Mobile Layout */
+@media (max-width: 479px) {
+  :root {
+    --section-padding: 52px;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .header-logo img {
+    height: 36px;
+    max-width: 160px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .section-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  .btn-lg {
+    min-height: 50px;
+    padding: 12px 20px;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Mobile Landscape Layout */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header-nav {
+    padding-block: var(--space-sm);
+  }
+
+  .header-nav-link {
+    min-height: 40px;
+  }
+}
+
+/* Reduced Motion Responsive Support */
+@media (prefers-reduced-motion: reduce) {
+  .header-nav {
+    transition: none;
+  }
+
+  .card:hover,
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* ==================================================
+   GLOBAL RESPONSIVE STYLES ENDED
+================================================== */

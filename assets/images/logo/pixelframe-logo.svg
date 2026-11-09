@@ -1,0 +1,33 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 340 90"
+     role="img"
+     aria-labelledby="logo-title">
+  <title id="logo-title">PixelFrame Studio</title>
+
+  <rect x="8" y="24" width="57" height="45"
+        rx="9" fill="none"
+        stroke="#25221F" stroke-width="3"/>
+
+  <path d="M20 24 L26 15 H45 L51 24"
+        fill="none" stroke="#25221F"
+        stroke-width="3" stroke-linejoin="round"/>
+
+  <circle cx="36.5" cy="46" r="14"
+          fill="none" stroke="#B38B59"
+          stroke-width="3.5"/>
+
+  <circle cx="36.5" cy="46" r="5" fill="#25221F"/>
+  <circle cx="55" cy="32" r="2.5" fill="#B38B59"/>
+
+  <text x="83" y="43"
+        font-family="Georgia, serif"
+        font-size="27" font-weight="600"
+        fill="#25221F">PixelFrame</text>
+
+  <text x="85" y="65"
+        font-family="Arial, sans-serif"
+        font-size="14" font-weight="600"
+        letter-spacing="5"
+        fill="#B38B59">STUDIO</text>
+</svg>

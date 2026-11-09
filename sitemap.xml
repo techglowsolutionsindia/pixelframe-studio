@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+# Add the verified sitemap URL after GitHub Pages deployment.

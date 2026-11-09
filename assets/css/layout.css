@@ -1,0 +1,157 @@
+/* ==================================================
+   GLOBAL LAYOUT STYLES STARTED
+================================================== */
+
+/* Main Container */
+.container {
+  width: min(calc(100% - 48px), var(--container-width));
+  margin-inline: auto;
+}
+
+/* Section Layout */
+.section {
+  position: relative;
+  padding-block: var(--section-padding);
+  scroll-margin-top: var(--header-height);
+}
+
+.section-full {
+  min-height: calc(100svh - var(--header-height));
+  display: flex;
+  align-items: center;
+}
+
+.section-short {
+  padding-block: var(--space-xl);
+}
+
+/* Section Heading */
+.section-heading {
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.section-heading-left {
+  margin-inline: 0;
+  text-align: left;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: var(--space-md);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.section-description {
+  max-width: 650px;
+  margin-inline: auto;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-heading-left .section-description {
+  margin-inline: 0;
+}
+
+/* Grid Layouts */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Flex Layouts */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Content Layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.content-column {
+  min-width: 0;
+}
+
+/* Background Utilities */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-background);
+}
+
+.bg-white {
+  background-color: var(--color-surface);
+}
+
+.bg-soft {
+  background-color: var(--color-surface-alt);
+}
+
+/* Text Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+/* ==================================================
+   GLOBAL LAYOUT STYLES ENDED
+================================================== */
