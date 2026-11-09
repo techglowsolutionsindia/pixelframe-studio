@@ -1,5 +1,4 @@
-
 User-agent: *
 Allow: /
 
-Sitemap: https://techglowsolutionsindia.github.io/sparkclean-services/sitemap.xml
+Sitemap: https://techglowsolutionsindia.github.io/pixelframe-studio/sitemap.xml
